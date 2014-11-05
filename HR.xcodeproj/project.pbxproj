@@ -14,6 +14,12 @@
 		0B8CAAC11A03637B00DB4B59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8CAAC01A03637B00DB4B59 /* Images.xcassets */; };
 		0B8CAAC41A03637B00DB4B59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B8CAAC21A03637B00DB4B59 /* LaunchScreen.xib */; };
 		0B8CAAD01A03637B00DB4B59 /* HRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CAACF1A03637B00DB4B59 /* HRTests.m */; };
+		0B8CAADA1A03676600DB4B59 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8CAAD91A03676600DB4B59 /* CoreBluetooth.framework */; };
+		0B8CAADE1A03677300DB4B59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8CAADD1A03677300DB4B59 /* UIKit.framework */; };
+		0B8CAAE01A03677A00DB4B59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8CAADF1A03677A00DB4B59 /* Foundation.framework */; };
+		0B8CAAE21A03678100DB4B59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8CAAE11A03678100DB4B59 /* CoreGraphics.framework */; };
+		0B8CAAE41A03682C00DB4B59 /* WFConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8CAAE31A03682C00DB4B59 /* WFConnector.framework */; };
+		0B9C5A181A0373A6000274AE /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9C5A171A0373A6000274AE /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,13 @@
 		0B8CAAC91A03637B00DB4B59 /* HRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8CAACE1A03637B00DB4B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B8CAACF1A03637B00DB4B59 /* HRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRTests.m; sourceTree = "<group>"; };
+		0B8CAAD91A03676600DB4B59 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0B8CAADD1A03677300DB4B59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0B8CAADF1A03677A00DB4B59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0B8CAAE11A03678100DB4B59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0B8CAAE31A03682C00DB4B59 /* WFConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WFConnector.framework; sourceTree = "<group>"; };
+		0B9C5A161A037327000274AE /* HR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HR.entitlements; sourceTree = "<group>"; };
+		0B9C5A171A0373A6000274AE /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9C5A181A0373A6000274AE /* ExternalAccessory.framework in Frameworks */,
+				0B8CAAE21A03678100DB4B59 /* CoreGraphics.framework in Frameworks */,
+				0B8CAAE01A03677A00DB4B59 /* Foundation.framework in Frameworks */,
+				0B8CAADE1A03677300DB4B59 /* UIKit.framework in Frameworks */,
+				0B8CAAE41A03682C00DB4B59 /* WFConnector.framework in Frameworks */,
+				0B8CAADA1A03676600DB4B59 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 		0B8CAAA71A03637B00DB4B59 = {
 			isa = PBXGroup;
 			children = (
+				0B8CAAE51A03683100DB4B59 /* Frameworks */,
 				0B8CAAB21A03637B00DB4B59 /* HR */,
 				0B8CAACC1A03637B00DB4B59 /* HRTests */,
 				0B8CAAB11A03637B00DB4B59 /* Products */,
@@ -81,6 +101,7 @@
 		0B8CAAB21A03637B00DB4B59 /* HR */ = {
 			isa = PBXGroup;
 			children = (
+				0B9C5A161A037327000274AE /* HR.entitlements */,
 				0B8CAAB71A03637B00DB4B59 /* AppDelegate.h */,
 				0B8CAAB81A03637B00DB4B59 /* AppDelegate.m */,
 				0B8CAABA1A03637B00DB4B59 /* ViewController.h */,
@@ -117,6 +138,19 @@
 				0B8CAACE1A03637B00DB4B59 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B8CAAE51A03683100DB4B59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B9C5A171A0373A6000274AE /* ExternalAccessory.framework */,
+				0B8CAAE31A03682C00DB4B59 /* WFConnector.framework */,
+				0B8CAAE11A03678100DB4B59 /* CoreGraphics.framework */,
+				0B8CAADF1A03677A00DB4B59 /* Foundation.framework */,
+				0B8CAADD1A03677300DB4B59 /* UIKit.framework */,
+				0B8CAAD91A03676600DB4B59 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +202,15 @@
 				TargetAttributes = {
 					0B8CAAAF1A03637B00DB4B59 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 65NB8C7JBQ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					0B8CAAC81A03637B00DB4B59 = {
 						CreatedOnToolsVersion = 6.1;
@@ -267,6 +310,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -302,6 +349,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -309,6 +358,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -335,29 +388,61 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
 		0B8CAAD41A03637B00DB4B59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HR/HR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
 		0B8CAAD51A03637B00DB4B59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HR/HR.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -414,6 +499,7 @@
 				0B8CAAD51A03637B00DB4B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B8CAAD61A03637B00DB4B59 /* Build configuration list for PBXNativeTarget "HRTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +508,7 @@
 				0B8CAAD81A03637B00DB4B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
